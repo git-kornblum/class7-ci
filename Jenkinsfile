@@ -5,7 +5,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 // This checks out the code from the repository.
-                git clone
+                git(url: 'https://github.com/git-kornblum/class7-ci.git', branch: 'main')
+                //git clone
             }
         }
         stage('Run Script') {
